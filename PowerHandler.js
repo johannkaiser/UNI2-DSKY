@@ -1,7 +1,8 @@
 var mainBusAValue;
 var mainBusBValue;
 $(document).ready(function() {
-  switch(mainBusA) {
+  $("powerOn").click(function() {
+    switch(mainBusA) {
     case 0:
       mainBusAValue = false;
     case 1:
@@ -20,4 +21,5 @@ $(document).ready(function() {
   } else {
     alert("ErrorCode1");
   }
+  });
 });
